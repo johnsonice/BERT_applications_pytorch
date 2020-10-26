@@ -19,7 +19,7 @@ from classification_model import BertForSequenceClassification
 from utils import EarlyStopping,DataProcessor,InputExample
 import config as args
 #%%
-#### since data can come in different fomat
+#### since data can come in different format
 #### you can defined your own data loader 
 #### for example 
 class SST2_Processor(DataProcessor):
@@ -117,6 +117,7 @@ if __name__ == "__main__":
         results =  evel_model(args,processor,label_list,tokenizer,model,device,optimizer,
                               tr_loss,nb_tr_steps,global_step,export_results=True)
 
+    print('Done')
 ##       results looks something like this 
 #        result = {'eval_loss': eval_loss,
 #                  'eval_accuracy': eval_accuracy,
