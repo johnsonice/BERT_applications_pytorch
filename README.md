@@ -9,3 +9,8 @@ cd transformers
 pip install .
 pip install -r ./examples/requirements.txt
 ```
+
+ltp and transoformer version we use are incompatable need to install ltp with no dependency
+```
+pip install --no-deps ltp
+```
